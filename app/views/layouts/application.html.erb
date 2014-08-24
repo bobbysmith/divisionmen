@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%= favicon_link_tag "favicon.ico" %>
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %>The Division Men</title>
+    <title><%= content_for?(:title) ? yield(:title) : "The Division Men" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -13,6 +13,16 @@
   </head>
 
   <body>
+    <section class="nav">
+      <nav>
+      <span><%= link_to "HOME", root_path %></span>
+        <span><a href="">NEWS</span>
+        <span>TOUR</span>
+        <span>AUDIO</span>
+        <span>VIDEO</span>
+        <span>CONTACT</span>
+      </nav>
+    </section>
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
