@@ -15,3 +15,40 @@
  *= require foundation_and_overrides
 
  */
+
+ body {
+  background: #020203;
+  width: 100%;
+  height: 100%;
+ }
+
+.logo {
+  width: 100%;
+  height: 100%;
+  background: url("logo.png") center no-repeat;
+  margin: 0 auto;
+}
+
+section {
+  border-bottom: 1px solid #555;
+}
+
+.nav {
+  width: 80%;
+  height: 3em;
+  margin: 0 auto;
+}
+
+.nav span {
+  margin-left: 5em;
+  line-height: 3em;
+}
+
+.nav a {
+  color: #D9C7C7;
+}
+
+.nav a:hover {
+  text-decoration: overline;
+  /*color: #E3DED9;*/
+}
