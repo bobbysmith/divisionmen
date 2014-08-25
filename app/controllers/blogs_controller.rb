@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-  before_filter :authenticate_user!, :except => [:index, :show]
+  # before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
     @blogs = Blog.all
@@ -24,11 +24,12 @@ class BlogsController < ApplicationController
   end
 
   def update
-    @blog = Blog.find[params[:id]]
+    @blog = Blog.find(params[:id])
 
     %w{title article}.each do |param|
-      if[:blog][param].blank?
+      if params[:blog][param].blank?
         params[:blog][param].delete
+      end
     end
 
     @blog.update(blog_params)

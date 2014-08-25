@@ -1,0 +1,12 @@
+<div class="row large-9">
+<% @blogs.each do |b| %>
+  <h3><%= b.title %></h3>
+  <p><%= b.article %></p>
+  <div>
+    <%= button_to "Edit", edit_blog_path(b.id), :method => "get", action: "edit", :class => "small radius button left" %>
+    <%= button_to "Delete", blog_path(b.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+  <hr>
+</div>
+<% end %>
+</div>
+
