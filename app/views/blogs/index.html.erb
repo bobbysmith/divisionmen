@@ -1,12 +1,15 @@
 <div class="row large-9">
 <% @blogs.each do |b| %>
-  <h3><%= b.title %></h3>
+  <h4><%= b.title %></h4>
   <p><%= b.article %></p>
-  <div>
-    <%= button_to "Edit", edit_blog_path(b.id), :method => "get", action: "edit", :class => "small radius button left" %>
-    <%= button_to "Delete", blog_path(b.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+  <p>Posted: <%= b.created_at.strftime("%b %d, %Y") %></p>
+  <% if user_signed_in? %>
+    <div>
+      <%= button_to "Edit", edit_blog_path(b.id), :method => "get", action: "edit", :class => "small radius button left" %>
+      <%= button_to "Delete", blog_path(b.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+  </div>
+<% end %>
   <hr>
-</div>
 <% end %>
 </div>
 

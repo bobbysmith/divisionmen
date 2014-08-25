@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :tours
   resources :blogs
+  get "/contact", to: "contacts#index"
 end
