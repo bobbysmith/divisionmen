@@ -1,3 +1,4 @@
+<div class="container">
 <div class="row large-8">
 <h1>Create New Article</h1>
   <%= form_for @blog, method: "post" do |blog| %>
@@ -7,4 +8,5 @@
     <%= blog.text_area :article %>
     <%= blog.submit "Create" %>
   <% end %>
+</div>
 </div>

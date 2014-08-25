@@ -2,7 +2,7 @@ class ToursController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
-    @tours = Tour.all
+    @tours = Tour.order('date ASC')
   end
 
   def show

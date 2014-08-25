@@ -1,3 +1,4 @@
+<div class="container">
 <div class="row large-4">
   <h1>Edit Show</h1>
   <%= form_for @tour, method: "put" do |tour| %>
@@ -11,4 +12,5 @@
     <%= tour.text_field :date, value: @tour.date %>
     <%= tour.submit "Save" %>
   <% end %>
+</div>
 </div>

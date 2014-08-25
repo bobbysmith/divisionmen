@@ -1,25 +1,33 @@
-<div class="row large-6">
-<table>
-  <thead>
-    <tr>
-      <td><h3>Venue</h3></td>
-      <td><h3>City</h3></td>
-      <td><h3>Date</h3></td>
-    </tr>
-  </thead>
-</table>
-<% @tours.each do |t| %>
-  <a href="<%= t.url %>" target="_blank"><%= t.venue %></a>
-  <%= t.city %>
-  <%= t.date.strftime("%b %d, %Y") %>
-  <% if user_signed_in? %>
-    <div>
-      <%= button_to "Edit", edit_tour_path(t.id), :method => "get", action: "edit", :class => "small radius button left" %>
-      <%= button_to "Delete", tour_path(t.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
-    </div>
-  <% end %>
-  <hr>
-<% end %>
+<div class="container">
+  <div class="row large-6">
+  <h1>Upcoming Shows</h1>
+    <table>
+      <thead>
+        <tr>
+          <td><h3>Date</h3></td>
+          <td><h3>City</h3></td>
+          <td><h3>Venue</h3></td>
+          <% if user_signed_in? %>
+            <td><h4>Edit/Delete</h4></td>
+          <% end %>
+        </tr>
+      </thead>
+      <tbody>
+        <% @tours.each do |t| %>
+          <tr>
+          <td><%= t.date.strftime("%b %d, %Y") %></td>
+          <td><%= t.city %></td>
+          <td><a href="<%= t.url %>" target="_blank"><%= t.venue %></a></td>
+          <% if user_signed_in? %>
+            <td><div>
+              <%= button_to "Edit", edit_tour_path(t.id), :method => "get", action: "edit", :class => "tiny radius button" %>
+              <%= button_to "Delete", tour_path(t.id), :method => "delete", :confirm => "Are you sure?", :class => "tiny radius button" %>
+            </div></td>
+          <% end %>
+          <!-- <hr> -->
+        <% end %>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-
-

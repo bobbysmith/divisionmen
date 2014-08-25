@@ -79,3 +79,14 @@ section {
   background: url("dm.jpg") center no-repeat;
   margin: 0 auto;
 }
+
+.container {
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.icons {
+  padding-top: 1em;
+  text-align: center;
+}
+

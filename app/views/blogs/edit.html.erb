@@ -1,3 +1,4 @@
+<div class="container">
 <div class="row large-4">
   <h1>Edit Article</h1>
   <%= form_for @blog, method: "put" do |blog| %>
@@ -7,4 +8,5 @@
     <%= blog.text_field :article, value: @blog.article %>
     <%= blog.submit "Save" %>
   <% end %>
+</div>
 </div>

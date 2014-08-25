@@ -1,6 +1,9 @@
 <div class="row large-9">
+<div class="container">
+<h1>MUSIC</h1>
   <% @songs.each do |s| %>
     <h4><%= s.title %></h4>
+
 
     <!-- soundcloud -->
     <% if s.url =~ /soundcloud{1}/i %>
@@ -31,4 +34,5 @@
     <% end %>
     <!-- <hr> -->
   <% end %>
+</div>
 </div>

@@ -1,3 +1,4 @@
+<div class="container">
 <div class="row large-4">
   <h1>Edit Video</h1>
   <%= form_for @video, method: "put" do |video| %>
@@ -7,4 +8,5 @@
     <%= video.text_field :url, value: @video.url %>
     <%= video.submit "Save" %>
   <% end %>
+</div>
 </div>
