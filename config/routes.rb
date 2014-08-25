@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :tours
   resources :blogs
   resources :videos
+  resources :songs
   get "/contact", to: "contacts#index"
 end

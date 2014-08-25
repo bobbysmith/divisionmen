@@ -1,0 +1,10 @@
+<div class="row large-4">
+  <h1>Edit Song</h1>
+  <%= form_for @song, method: "put" do |song| %>
+    <%= song.label :title %>
+    <%= song.text_field :title, value: @song.title %>
+    <%= song.label :url %>
+    <%= song.text_field :url, value: @song.url %>
+    <%= song.submit "Save" %>
+  <% end %>
+</div>

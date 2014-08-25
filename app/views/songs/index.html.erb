@@ -1,0 +1,18 @@
+<div class="row large-9">
+  <% @songs.each do |s| %>
+    <h4><%= s.title %></h4>
+    <object height="20px" width="100%" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+      <param name="movie" value="http://player.soundcloud.com/player.swf?url=<%= s.url %>&enable_api=true&player_type=tiny&show_comments=false"></param>
+      <param name="allowscriptaccess" value="always"></param>
+      <param name="wmode" value="transparent"></param>
+      <embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="http://player.soundcloud.com/player.swf?url=<%= s.url %>&player_type=tiny&enable_api=true" ></embed>
+    </object>
+    <% if user_signed_in? %>
+      <div>
+        <%= button_to "Edit", edit_song_path(s.id), :method => "get", action: "edit", :class => "small radius button left" %>
+        <%= button_to "Delete", song_path(s.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+      </div>
+    <% end %>
+    <!-- <hr> -->
+  <% end %>
+</div>

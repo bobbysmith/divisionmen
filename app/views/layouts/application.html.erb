@@ -18,7 +18,7 @@
         <span><%= link_to "HOME", root_path %></span>
         <span><%= link_to "NEWS", blogs_path %></span>
         <span><%= link_to "TOUR", tours_path %></span>
-        <span><a href="#">AUDIO</a></span>
+        <span><%= link_to "AUDIO", songs_path %></span>
         <span><%= link_to "VIDEO", videos_path %></span>
         <span><%= link_to "CONTACT", contact_path %></span>
       </nav>
@@ -26,7 +26,7 @@
         <% if user_signed_in? %>
           <span><%= link_to "ADD POST", new_blog_path %></span>
           <span><%= link_to "ADD SHOW", new_tour_path %></span>
-          <span><%= link_to "ADD SONG" %></span>
+          <span><%= link_to "ADD SONG", new_song_path %></span>
           <span><%= link_to "ADD VIDEO", new_video_path %></span>
           <span><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
         <% end %>
