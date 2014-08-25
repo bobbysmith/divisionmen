@@ -41,3 +41,5 @@ gem 'bcrypt'
 gem 'foundation-rails'
 gem 'hirb'
 gem 'devise'
+
+gem 'rails_12factor'
