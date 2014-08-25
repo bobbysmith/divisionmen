@@ -1,0 +1,10 @@
+<div class="row large-8">
+  <h1>Create New Article</h1>
+    <%= form_for @video, method: "post" do |video| %>
+      <%= video.label :title %>
+      <%= video.text_field :title %>
+      <%= video.label :url %>
+      <%= video.text_field :url %>
+      <%= video.submit "Create" %>
+    <% end %>
+</div>

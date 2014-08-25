@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :tours
   resources :blogs
+  resources :videos
   get "/contact", to: "contacts#index"
 end
