@@ -86,7 +86,17 @@ section {
 }
 
 .icons {
+  margin-left: 5px;
   padding-top: 1em;
   text-align: center;
+  height: 60px;
+  height: 60px;
 }
 
+.icons:nth-child(1) {
+  margin-left: 0;
+}
+
+.icons a:hover {
+  border: 1px solid #D9C7C7;
+}
