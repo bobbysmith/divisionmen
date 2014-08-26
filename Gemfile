@@ -41,5 +41,5 @@ gem 'bcrypt'
 gem 'foundation-rails'
 gem 'hirb'
 gem 'devise'
-
+gem 'will_paginate'
 gem 'rails_12factor'

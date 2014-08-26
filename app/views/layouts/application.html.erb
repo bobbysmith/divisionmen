@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <section class="nav">
+    <div class="nav fixed">
       <nav>
         <span><%= link_to "HOME", root_path %></span>
         <span><%= link_to "NEWS", blogs_path %></span>
@@ -31,7 +31,7 @@
           <span><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
         <% end %>
       </div>
-    </section>
+    </div>
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
