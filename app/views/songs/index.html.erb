@@ -1,38 +1,37 @@
-<div class="row large-9">
 <div class="container">
-<h1>MUSIC</h1>
-  <% @songs.each do |s| %>
-    <h4><%= s.title %></h4>
+  <div class="row large-9">
+  <h1>MUSIC</h1>
+    <% @songs.each do |s| %>
+      <h4><%= s.title %></h4>
+
+      <!-- soundcloud -->
+      <% if s.url =~ /soundcloud{1}/i %>
+        <object height="20px" width="100%" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+          <param name="movie" value="http://player.soundcloud.com/player.swf?url=<%= s.url %>&enable_api=true&player_type=tiny&show_comments=false"></param>
+          <param name="allowscriptaccess" value="always"></param>
+          <param name="wmode" value="transparent"></param>
+          <embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="http://player.soundcloud.com/player.swf?url=<%= s.url %>&player_type=tiny&enable_api=true" ></embed>
+        </object>
+      <% end %>
+
+      <!-- reverbnation -->
+      <% if s.url =~ /reverbnation{1}/i %>
+        <div class="widget_iframe" style="display:inline-block;width:100%;height:104px;margin:0;padding:0;border:0;"><iframe class="widget_iframe" src="http://www.reverbnation.com/widget_code/html_widget/artist_1267397?widget_id=50&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=0&pwc[song_ids]=6966282&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe></div>
+      <% end %>
+
+      <!-- bandcamp -->
+      <% if s.url =~ /bandcamp{1}/i %>
+        <iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3206561127/size=small/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://divisionmen.bandcamp.com/album/under-the-gun"><%= s.title %></a></iframe>
+      <% end %>
 
 
-    <!-- soundcloud -->
-    <% if s.url =~ /soundcloud{1}/i %>
-      <object height="20px" width="100%" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
-        <param name="movie" value="http://player.soundcloud.com/player.swf?url=<%= s.url %>&enable_api=true&player_type=tiny&show_comments=false"></param>
-        <param name="allowscriptaccess" value="always"></param>
-        <param name="wmode" value="transparent"></param>
-        <embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="http://player.soundcloud.com/player.swf?url=<%= s.url %>&player_type=tiny&enable_api=true" ></embed>
-      </object>
+      <% if user_signed_in? %>
+        <div>
+          <%= button_to "Edit", edit_song_path(s.id), :method => "get", action: "edit", :class => "small radius button left" %>
+          <%= button_to "Delete", song_path(s.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+        </div>
+      <% end %>
+      <!-- <hr> -->
     <% end %>
-
-    <!-- reverbnation -->
-    <% if s.url =~ /reverbnation{1}/i %>
-      <div class="widget_iframe" style="display:inline-block;width:100%;height:104px;margin:0;padding:0;border:0;"><iframe class="widget_iframe" src="http://www.reverbnation.com/widget_code/html_widget/artist_1267397?widget_id=50&pwc[design]=default&pwc[background_color]=%23333333&pwc[included_songs]=0&pwc[song_ids]=6966282&pwc[photo]=0%2C1&pwc[size]=fit" width="100%" height="100%" frameborder="0" scrolling="no"></iframe></div>
-    <% end %>
-
-    <!-- bandcamp -->
-    <% if s.url =~ /bandcamp{1}/i %>
-      <iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3206561127/size=small/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://divisionmen.bandcamp.com/album/under-the-gun"><%= s.title %></a></iframe>
-    <% end %>
-
-
-    <% if user_signed_in? %>
-      <div>
-        <%= button_to "Edit", edit_song_path(s.id), :method => "get", action: "edit", :class => "small radius button left" %>
-        <%= button_to "Delete", song_path(s.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
-      </div>
-    <% end %>
-    <!-- <hr> -->
-  <% end %>
-</div>
+  </div>
 </div>

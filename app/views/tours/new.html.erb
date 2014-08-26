@@ -1,18 +1,18 @@
 <div class="container">
-<div class="row large-4">
-<h1>Create New Show</h1>
-  <div class="tour">
-    <%= form_for @tour, method: "post" do |tour| %>
-      <%= tour.label :venue %>
-      <%= tour.text_field :venue %>
-      <%= tour.label :city %>
-      <%= tour.text_field :city %>
-      <%= tour.label :url %>
-      <%= tour.text_field :url %>
-      <%= tour.label :date %>
-      <%= tour.text_field :date %>
-      <%= tour.submit "Create" %>
-    <% end %>
+  <div class="row large-4">
+  <h1>Create New Show</h1>
+    <div class="tour">
+      <%= form_for @tour, method: "post" do |tour| %>
+        <%= tour.label :venue %>
+        <%= tour.text_field :venue %>
+        <%= tour.label :city %>
+        <%= tour.text_field :city %>
+        <%= tour.label :url %>
+        <%= tour.text_field :url %>
+        <%= tour.label :date %>
+        <%= tour.text_field :date %>
+        <%= tour.submit "Create" %>
+      <% end %>
+    </div>
   </div>
-</div>
 </div>

@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require hover
  *= require_tree .
  *= require_self
  *= require foundation_and_overrides
@@ -23,7 +24,7 @@
  }
 
  h1, h2, h3, h4, h5, h6, p {
-  color: #D9C7C7;
+  color: #cbcbcb;
   text-align: center;
  }
 
@@ -39,6 +40,14 @@
 }
 
 section {
+}
+
+nav {
+  background: #26292c;
+  /*border-bottom: 1px solid #444;*/
+  -webkit-box-shadow: 0px 1px 5px #fff;
+  -moz-box-shadow: 0px 1px 5px #fff;
+  box-shadow: 0px 1px 5px #fff;
 }
 
 .nav {
@@ -63,12 +72,12 @@ section {
 }
 
 .nav a {
-  color: #D9C7C7;
+  color: #CBCBCB;
+  font-weight: lighter;
 }
 
 .nav a:hover {
-  text-decoration: overline;
-  /*color: #E3DED9;*/
+  font-weight: normal;
 }
 
 .user-nav {
@@ -84,7 +93,7 @@ section {
 
 .container {
   padding: 1em;
-  margin-top: 2em;
+  padding-top: 4em;
 }
 
 .icons {
@@ -100,7 +109,7 @@ section {
 }
 
 .icons a:hover {
-  border: 1px solid #D9C7C7;
+
 }
 
 .contact {

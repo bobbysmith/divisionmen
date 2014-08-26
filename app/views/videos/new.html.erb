@@ -1,13 +1,13 @@
 <div class="container">
-<div class="row large-4">
-  <h1>Create New Video</h1>
-    <%= form_for @video, method: "post" do |video| %>
-      <%= video.label :title %>
-      <%= video.text_field :title %>
-      <p style="font-size: 0.8em">Paste the id after the '='.<br>Ex: https://www.youtube.com/watch?v=<strong style="color: #E02306">fW5xm1iyAmg</strong></p>
-      <%= video.label :url %>
-      <%= video.text_field :url %>
-      <%= video.submit "Create" %>
-    <% end %>
-</div>
+  <div class="row large-4">
+    <h1>Create New Video</h1>
+      <%= form_for @video, method: "post" do |video| %>
+        <%= video.label :title %>
+        <%= video.text_field :title %>
+        <p style="font-size: 0.8em">Paste the id after the '='.<br>Ex: https://www.youtube.com/watch?v=<strong style="color: #E02306">fW5xm1iyAmg</strong></p>
+        <%= video.label :url %>
+        <%= video.text_field :url %>
+        <%= video.submit "Create" %>
+      <% end %>
+  </div>
 </div>
