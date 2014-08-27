@@ -7,6 +7,15 @@
 
       <h4><%= s.title %></h4>
 
+      <!-- soundcloud -->
+      <% if s.url =~ /soundcloud{1}/i %>
+        <object height="20px" width="100%" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+          <param name="movie" value="http://player.soundcloud.com/player.swf?url=<%= s.url %>&enable_api=true&player_type=tiny&show_comments=false"></param>
+          <param name="allowscriptaccess" value="always"></param>
+          <param name="wmode" value="transparent"></param>
+          <embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="http://player.soundcloud.com/player.swf?url=<%= s.url %>&player_type=tiny&enable_api=true" ></embed>
+        </object>
+      <% end %>
 
       <% if user_signed_in? %>
         <div>
@@ -18,5 +27,3 @@
     <% end %>
   </div>
 </div>
-
-<iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3206561127/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2935271337/transparent=true/" seamless><a href="http://divisionmen.bandcamp.com/album/under-the-gun">Under The Gun by The Division Men</a></iframe>
