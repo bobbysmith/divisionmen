@@ -1,16 +1,19 @@
 <div class="container">
-  <div class="row large-9">
-    <% @videos.each do |v| %>
-      <h4><%= v.title %></h4>
-      <iframe width="315" height="237" src="//www.youtube.com/embed/<%= v.url %>" frameborder="0" allowfullscreen></iframe>
-      <% if user_signed_in? %>
-        <div>
-          <%= button_to "Edit", edit_video_path(v.id), :method => "get", action: "edit", :class => "small radius button left" %>
-          <%= button_to "Delete", video_path(v.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
-        </div>
+  <div class="row large-9 video">
+    <h1>VIDEOS</h1>
+    <div class="box clearfix">
+      <% @videos.each do |v| %>
+        <!-- <h4><%= v.title %></h4> -->
+        <iframe width="315" height="237" src="//www.youtube.com/embed/<%= v.url %>" frameborder="0" allowfullscreen></iframe>
+        <% if user_signed_in? %>
+          <div>
+            <%= button_to "Edit", edit_video_path(v.id), :method => "get", action: "edit", :class => "small radius button left" %>
+            <%= button_to "Delete", video_path(v.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+          </div>
+        <% end %>
+        <!-- <hr> -->
       <% end %>
-      <!-- <hr> -->
-    <% end %>
+    </div>
   </div>
 </div>
 

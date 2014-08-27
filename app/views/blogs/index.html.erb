@@ -1,5 +1,7 @@
 <div class="container">
-  <div class="row large-9">
+  <div class="row large-8">
+    <h1>RECENT NEWS</h1>
+    <div class="box">
     <% @blogs.each do |b| %>
       <h4><%= b.title %></h4>
       <p><%= b.article %></p>
@@ -13,5 +15,6 @@
       <hr>
     <% end %>
     <%= will_paginate @blogs %>
+    </div>
   </div>
 </div>

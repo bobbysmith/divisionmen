@@ -6,31 +6,39 @@
     <%= favicon_link_tag "favicon.ico" %>
 
     <title><%= content_for?(:title) ? yield(:title) : "The Division Men" %></title>
-
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <div class="nav fixed">
-      <nav>
-        <span class=""><%= link_to "HOME", root_path %></span>
-        <span class=""><%= link_to "NEWS", blogs_path %></span>
-        <span class=""><%= link_to "TOUR", tours_path %></span>
-        <span class=""><%= link_to "AUDIO", songs_path %></span>
-        <span class=""><%= link_to "VIDEO", videos_path %></span>
-        <span class=""><%= link_to "CONTACT", contact_path %></span>
-      </nav>
-      <div class="user-nav nav">
-        <% if user_signed_in? %>
-          <span><%= link_to "ADD POST", new_blog_path %></span>
-          <span><%= link_to "ADD SHOW", new_tour_path %></span>
-          <span><%= link_to "ADD SONG", new_song_path %></span>
-          <span><%= link_to "ADD VIDEO", new_video_path %></span>
-          <span><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
-        <% end %>
-      </div>
+
+
+
+    <div class="nav fixed sticky contain-to-grid">
+      <!-- <div class="contain-to-grid sticky"> -->
+        <nav class="top-bar" data-topbar data-options="sticky_on: large">
+          <section class="top-bar-section no-color">
+            <span><%= link_to "HOME", root_path %></span>
+            <span><%= link_to "NEWS", blogs_path %></span>
+            <span><%= link_to "TOUR", tours_path %></span>
+            <span><%= link_to "AUDIO", songs_path %></span>
+            <span><%= link_to "VIDEO", videos_path %></span>
+            <span><%= link_to "CONTACT", contact_path %></span>
+            <div class="user-nav nav">
+              <% if user_signed_in? %>
+                <span><%= link_to "ADD POST", new_blog_path %></span>
+                <span><%= link_to "ADD SHOW", new_tour_path %></span>
+                <span><%= link_to "ADD SONG", new_song_path %></span>
+                <span><%= link_to "ADD VIDEO", new_video_path %></span>
+                <span><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
+              <% end %>
+            </div>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
+          </section>
+        </nav>
+      <!-- </div> -->
     </div>
 
     <%= yield %>
