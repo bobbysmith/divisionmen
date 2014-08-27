@@ -23,8 +23,8 @@
 
       <% if user_signed_in? %>
         <div>
-          <%= button_to "Edit", edit_song_path(s.id), :method => "get", action: "edit", :class => "small radius button left" %>
-          <%= button_to "Delete", song_path(s.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+          <%= button_to "Edit", edit_song_path(s.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
+          <%= button_to "Delete", song_path(s.id), :method => "delete", :confirm => "Are you sure?", :class => "tiny radius button" %>
         </div>
       <% end %>
       <!-- <hr> -->

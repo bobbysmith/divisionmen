@@ -168,7 +168,13 @@ td {
 .videos {
   text-align: center;
 }
+ .add {
+  height: 100%;
+ }
 
+ label {
+  color: #CBCBCB;
+ }
 
 .top-bar-section ul {
   background: none;

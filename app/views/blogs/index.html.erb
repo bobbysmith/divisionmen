@@ -8,8 +8,8 @@
       <p>Posted: <%= b.created_at.strftime("%b %d, %Y") %></p>
       <% if user_signed_in? %>
         <div>
-          <%= button_to "Edit", edit_blog_path(b.id), :method => "get", action: "edit", :class => "small radius button left" %>
-          <%= button_to "Delete", blog_path(b.id), :method => "delete", :confirm => "Are you sure?", :class => "small radius button" %>
+          <%= button_to "Edit", edit_blog_path(b.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
+          <%= button_to "Delete", blog_path(b.id), :method => "delete", :confirm => "Are you sure?", :class => "tiny radius button" %>
         </div>
       <% end %>
       <hr>

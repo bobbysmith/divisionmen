@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container add">
   <div class="row large-4">
   <h1>Create New Show</h1>
     <div class="tour">
@@ -13,7 +13,7 @@
         <%= tour.text_field :date %>
         <%= tour.label :bands %>
         <%= tour.text_field :bands %>
-        <%= tour.submit "Create" %>
+        <%= tour.submit "Create", :class => "tiny radius button" %>
       <% end %>
     </div>
   </div>
