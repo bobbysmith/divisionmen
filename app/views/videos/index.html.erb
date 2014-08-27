@@ -1,7 +1,7 @@
-<div class="container">
-  <div class="row large-9 video">
+<div class="container video">
+  <div class="row large-9">
+    <div class="box">
     <h1>VIDEOS</h1>
-    <div class="box clearfix">
       <% @videos.each do |v| %>
         <!-- <h4><%= v.title %></h4> -->
         <iframe width="315" height="237" src="//www.youtube.com/embed/<%= v.url %>" frameborder="0" allowfullscreen></iframe>

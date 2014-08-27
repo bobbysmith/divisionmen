@@ -27,6 +27,7 @@
   color: #cbcbcb;
   text-align: center;
   font-weight: lighter;
+  letter-spacing: 2px;
   /*font-family: "Lato";*/
  }
 
@@ -34,14 +35,10 @@
   text-align: left;
  }
 
- h1 {
-  padding-bottom: 1em;
- }
-
 .box {
-  background-color:rgba(0,0,0,0.8);
+  background-color:rgba(0,0,0,0.4);
   border-radius: 10px;
-  padding: 1em;
+  padding: 2em;
 }
 
 .logo {
@@ -84,6 +81,7 @@
 .nav a {
   color: #CBCBCB;
   font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 .nav a:hover {
@@ -106,6 +104,49 @@
   background: none;
 }*/
 
+.live {
+  background: url("live.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blog {
+  background: url("news.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.music {
+  text-align: center;
+  background: url("music.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.video {
+  background: url("video.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contact {
+  background: url("contact.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
 .icons {
   margin-left: 5px;
   padding-top: 1em;
@@ -122,10 +163,6 @@
 
 }
 
-.contact {
-  background: #424242;
-  height: 100%;
-}
 
 .top-bar-section ul {
   background: none;
@@ -137,12 +174,6 @@
 
 .top-bar .toggle-topbar.menu-icon a {
   background: none;
-}
-
-.music {
-  width: 100%;
-  /*margin: 0 auto;*/
-  text-align: center;
 }
 
 h6 {
