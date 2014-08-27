@@ -8,6 +8,8 @@
           <td><h3>Date</h3></td>
           <td><h3>City</h3></td>
           <td><h3>Venue</h3></td>
+          <td><h3>With</h3></td>
+
           <% if user_signed_in? %>
             <td><h4>Edit/Delete</h4></td>
           <% end %>
@@ -19,6 +21,7 @@
           <td><%= t.date.strftime("%b %d, %Y") %></td>
           <td><%= t.city %></td>
           <td><a href="<%= t.url %>" target="_blank"><%= t.venue %></a></td>
+          <td><%= t.bands %></td>
           <% if user_signed_in? %>
             <td><div>
               <%= button_to "Edit", edit_tour_path(t.id), :method => "get", action: "edit", :class => "tiny radius button" %>

@@ -26,7 +26,7 @@ class ToursController < ApplicationController
   def update
     @tour = Tour.find(params[:id])
 
-    %w{venue url city date}.each do |param_name|
+    %w{venue url city date bands}.each do |param_name|
       if params[:tour][param_name].blank?
         params[:tour].delete(param_name)
       end
@@ -45,7 +45,7 @@ class ToursController < ApplicationController
   private
 
   def tour_params
-    params.require(:tour).permit(:venue, :city, :url, :date)
+    params.require(:tour).permit(:venue, :city, :url, :date, :bands)
   end
 
 end

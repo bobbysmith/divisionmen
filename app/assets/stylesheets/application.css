@@ -100,11 +100,11 @@
   padding-top: 4em;
 }
 
-table {
+/*table {
   width: 100%;
   border-radius: 10px;
   background: none;
-}
+}*/
 
 .icons {
   margin-left: 5px;
@@ -145,8 +145,14 @@ table {
   text-align: center;
 }
 
+h6 {
+  display: inline-block;
+}
+
 iframe {
   padding: 1em;
+  /*display: table-cell;*/
+  /*display: inline;*/
 }
 
 @media screen and (max-width: 728px) {
