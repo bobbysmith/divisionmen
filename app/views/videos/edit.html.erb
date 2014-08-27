@@ -1,12 +1,14 @@
 <div class="container">
   <div class="row large-4">
-    <h1>Edit Video</h1>
-    <%= form_for @video, method: "put" do |video| %>
-      <%= video.label :title %>
-      <%= video.text_field :title, value: @video.title %>
-      <%= video.label :url %>
-      <%= video.text_field :url, value: @video.url %>
-      <%= video.submit "Save", :class => "tiny radius button" %>
-    <% end %>
+    <div class="box">
+      <h1>Edit Video</h1>
+      <%= form_for @video, method: "put" do |video| %>
+        <%= video.label :title %>
+        <%= video.text_field :title, value: @video.title %>
+        <%= video.label :url %>
+        <%= video.text_field :url, value: @video.url %>
+        <%= video.submit "Save", :class => "tiny radius button" %>
+      <% end %>
+    </div>
   </div>
 </div>

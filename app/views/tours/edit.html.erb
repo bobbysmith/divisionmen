@@ -1,18 +1,20 @@
 <div class="container">
   <div class="row large-4">
-    <h1>Edit Show</h1>
-    <%= form_for @tour, method: "put" do |tour| %>
-      <%= tour.label :venue %>
-      <%= tour.text_field :venue, value: @tour.venue %>
-      <%= tour.label :url %>
-      <%= tour.text_field :url, value: @tour.url %>
-      <%= tour.label :city %>
-      <%= tour.text_field :city, value: @tour.city %>
-      <%= tour.label :date %>
-      <%= tour.text_field :date, value: @tour.date %>
-      <%= tour.label :bands %>
-      <%= tour.text_field :bands, value: @tour.bands %>
-      <%= tour.submit "Save", :class => "tiny radius button" %>
-    <% end %>
+    <div class="box">
+      <h1>Edit Show</h1>
+      <%= form_for @tour, method: "put" do |tour| %>
+        <%= tour.label :venue %>
+        <%= tour.text_field :venue, value: @tour.venue %>
+        <%= tour.label :url %>
+        <%= tour.text_field :url, value: @tour.url %>
+        <%= tour.label :city %>
+        <%= tour.text_field :city, value: @tour.city %>
+        <%= tour.label :date %>
+        <%= tour.text_field :date, value: @tour.date %>
+        <%= tour.label :bands %>
+        <%= tour.text_field :bands, value: @tour.bands %>
+        <%= tour.submit "Save", :class => "tiny radius button" %>
+      <% end %>
+    </div>
   </div>
 </div>
