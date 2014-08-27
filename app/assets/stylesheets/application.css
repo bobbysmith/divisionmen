@@ -38,7 +38,7 @@
 .box {
   background-color:rgba(0,0,0,0.4);
   border-radius: 10px;
-  padding: 2em;
+  padding: 1em 2em;
 }
 
 .logo {
@@ -48,6 +48,11 @@
   top: 40%;
   padding: 0 1em;
 }
+
+.main-nav {
+  background: #333333;
+}
+
 
 .nav {
   border-bottom: 1px solid #555;
@@ -88,6 +93,7 @@
 .container {
   padding: 2em;
   padding-top: 4em;
+  /*height: 100%;*/
 }
 
 td {
@@ -95,14 +101,6 @@ td {
   /*border-radius: 10px;*/
   background: none;
   color: #CBCBCB;
-}
-
-.live {
-  background: url("live.jpg") fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .blog {
@@ -113,8 +111,15 @@ td {
   background-size: cover;
   font-weight: 500;
   height: 100%;
-
 }
+.live {
+  background: url("live.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 .music {
   text-align: center;
@@ -146,7 +151,8 @@ td {
 .center {
   position: relative;
   top: 50%;
-  transform: translateY(20%);
+  transform: translateY(40%);
+  padding-bottom: 2em;
 }
 
 .icons {
@@ -168,6 +174,7 @@ td {
 .videos {
   text-align: center;
 }
+
  .add {
   height: 100%;
  }
@@ -176,7 +183,12 @@ td {
   color: #CBCBCB;
  }
 
-.top-bar-section ul {
+ .button {
+  /*background: #cbcbcb;*/
+  margin: 5px;
+ }
+
+/*.top-bar-section ul {
   background: none;
 }
 
@@ -186,7 +198,7 @@ td {
 
 .top-bar .toggle-topbar.menu-icon a {
   background: none;
-}
+}*/
 
 h6 {
   display: inline-block;

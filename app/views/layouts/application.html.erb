@@ -13,16 +13,18 @@
   </head>
 
   <body>
-    <div class="nav fixed contain-to-grid">
+    <div class="nav fixed">
       <!-- <div class="contain-to-grid sticky"> -->
-        <nav class="top-bar" data-topbar data-options="sticky_on: large">
-          <section class="top-bar-section no-color">
-            <span><%= link_to "HOME", root_path %></span>
-            <span><%= link_to "NEWS", blogs_path %></span>
-            <span><%= link_to "LIVE", tours_path %></span>
-            <span><%= link_to "LISTEN", songs_path %></span>
-            <span><%= link_to "WATCH", videos_path %></span>
-            <span><%= link_to "CONTACT", contact_path %></span>
+        <nav>
+          <section>
+          <div class="nav main-nav">
+              <span><%= link_to "HOME", root_path %></span>
+              <span><%= link_to "NEWS", blogs_path %></span>
+              <span><%= link_to "LIVE", tours_path %></span>
+              <span><%= link_to "LISTEN", songs_path %></span>
+              <span><%= link_to "WATCH", videos_path %></span>
+              <span><%= link_to "CONTACT", contact_path %></span>
+            </div>
             <div class="user-nav nav">
               <% if user_signed_in? %>
                 <span><%= link_to "ADD POST", new_blog_path %></span>
@@ -32,7 +34,7 @@
                 <span><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
               <% end %>
             </div>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
+            <!-- <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li> -->
           </section>
         </nav>
       <!-- </div> -->
