@@ -1,15 +1,14 @@
 <div class="container live-page">
   <div class="row">
-  <div class="box large-6">
-  <h1>Upcoming Shows</h1>
+    <div class="box large-10">
+    <h1>Upcoming Shows</h1>
     <table>
       <thead>
         <tr>
-          <td><h3>Date</h3></td>
-          <td><h3>City</h3></td>
-          <td><h3>Venue</h3></td>
-          <td><h3>With</h3></td>
-
+          <th>Date</th>
+          <th>City</th>
+          <th>Venue</th>
+          <th>With</th>
           <% if user_signed_in? %>
             <td><h4>Edit/Delete</h4></td>
           <% end %>
@@ -33,6 +32,6 @@
         </tr>
       </tbody>
     </table>
-    </div>
+   </div>
   </div>
 </div>
