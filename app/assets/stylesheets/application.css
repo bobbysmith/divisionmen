@@ -205,6 +205,19 @@ iframe {
   padding: 0.7em;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 2em;
+  width: 100%;
+  /*font-family: "Lato";*/
+  font-weight: lighter;
+  color: #CBCBCB;
+  background: #26292c;
+  padding-top: 5px;
+}
+
 @media screen and (max-width: 769px) {
   .youtube {
     width: 400px;
@@ -231,6 +244,8 @@ iframe {
     width: 30px;
     height: 30px;
     display: inline;
+    text-align: center;
+
   }
   table {
     width: 90%;
@@ -269,6 +284,7 @@ iframe {
     width: 30px;
     height: 30px;
     display: inline;
+    text-align: center;
   }
   table {
     width: 100%;
