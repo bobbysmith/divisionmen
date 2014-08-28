@@ -234,17 +234,7 @@ iframe {
     font-size: 0.8em;
     margin-left: 5px;
   }
-
-  .blog {
-    background: url("news_iphone.jpg") fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100%;
-  }
 }
-
 
 @media only screen and (max-width: 385px) {
   .youtube {
@@ -280,14 +270,5 @@ iframe {
   .user-nav span {
     font-size: 0.6em;
     margin-left: 3px;
-  }
-
-  .blog {
-    background: url("news_iphone.jpg") fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100%;
   }
 }
