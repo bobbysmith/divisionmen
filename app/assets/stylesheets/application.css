@@ -212,22 +212,48 @@ iframe {
   height: auto;*/
 }
 
-@media screen and (max-width: 800px) {
-  iframe {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+@media screen and (max-width: 728px) {
+
+}
+
+@media screen and (max-width: 541px) {
+  .youtube {
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+  }
+  .bc {
+    width: 400px;
+    height: 700px;
+    padding: 5px;
+  }
+  .contact a {
+    font-size: 0.6em;
+  }
+  .icons {
+    width: 30px;
+    height: 30px;
+    display: inline;
   }
 }
 
-@media only screen and (max-width: 320px) {
-  iframe .youtube {
+@media only screen and (max-width: 385px) {
+  .youtube {
     width: 200px;
     height: 150px;
+    padding: 5px;
   }
-  iframe .bc {
+  .bc {
     width: 200px;
-    height: 175px;
+    height: 350px;
+    padding: 5px;
+  }
+  .contact a {
+    font-size: 0.6em;
+  }
+  .icons {
+    width: 30px;
+    height: 30px;
+    display: inline;
   }
 }
