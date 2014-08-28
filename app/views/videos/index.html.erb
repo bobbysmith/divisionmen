@@ -1,11 +1,11 @@
 <div class="container video-page">
   <div class="row">
-    <div class="box small-9 medium-9 large-9 clearfix">
+    <div class="box small-12 medium-9 large-9 clearfix">
     <h1>VIDEOS</h1>
         <div class="videos clearfix">
       <% @videos.each do |v| %>
         <!-- <h4><%= v.title %></h4> -->
-        <iframe width="90%" height="315" src="//www.youtube.com/embed/<%= v.url %>" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/<%= v.url %>" frameborder="0" allowfullscreen></iframe>
         <% if user_signed_in? %>
           <div>
             <%= button_to "Edit", edit_video_path(v.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
