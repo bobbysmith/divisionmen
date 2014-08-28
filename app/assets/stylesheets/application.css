@@ -55,7 +55,7 @@
   top: 50%;
   padding: 0 1em;*/
   background: url("logo6.png") center no-repeat;
-    -webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -240,6 +240,15 @@ iframe {
     font-size: 0.8em;
     margin-left: 5px;
   }
+
+  .logo {
+    background: url("logo6.png") center no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    min-height: 100%;
+  }
 }
 
 @media only screen and (max-width: 385px) {
@@ -276,5 +285,14 @@ iframe {
   .user-nav span {
     font-size: 0.6em;
     margin-left: 3px;
+  }
+
+  .logo {
+    background: url("logo6.png") center no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    min-height: 100%;
   }
 }
