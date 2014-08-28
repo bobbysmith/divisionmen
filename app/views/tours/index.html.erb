@@ -1,7 +1,7 @@
 <div class="container live-page">
   <div class="row">
     <div class="box small-12 medium-10 large-10">
-    <h1>Upcoming Shows</h1>
+    <h2>UPCOMING SHOWS</h2>
     <table>
       <thead>
         <tr>
@@ -24,7 +24,7 @@
           <% if user_signed_in? %>
             <td><div>
               <%= button_to "Edit", edit_tour_path(t.id), :method => "get", action: "edit", :class => "tiny radius button" %>
-              <%= button_to "Delete", tour_path(t.id), :method => "delete", :confirm => "Are you sure?", :class => "tiny radius button" %>
+              <%= button_to "Delete", tour_path(t.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button" %>
             </div></td>
           <% end %>
           <!-- <hr> -->

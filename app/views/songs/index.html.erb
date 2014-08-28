@@ -1,7 +1,7 @@
 <div class="container music">
   <div class="row">
   <div class="box small-12 medium-10 large-10 clearfix">
-  <h1>MUSIC</h1>
+  <h2>MUSIC</h2>
    <iframe class="bc" width="350px" height="470" style="border: 0;" src="http://bandcamp.com/EmbeddedPlayer/album=3206561127/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="http://divisionmen.bandcamp.com/album/under-the-gun">Under The Gun by The Division Men</a></iframe>
    <!-- <h6>Recorded: May 2014</h6> -->
 
@@ -24,7 +24,7 @@
       <% if user_signed_in? %>
         <div>
           <%= button_to "Edit", edit_song_path(s.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
-          <%= button_to "Delete", song_path(s.id), :method => "delete", :confirm => "Are you sure?", :class => "tiny radius button" %>
+          <%= button_to "Delete", song_path(s.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button" %>
         </div>
       <% end %>
       <!-- <hr> -->

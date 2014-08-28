@@ -1,7 +1,7 @@
 <div class="container video-page">
   <div class="row">
     <div class="box small-12 medium-9 large-9 clearfix">
-    <h1>VIDEOS</h1>
+    <h2>VIDEOS</h2>
         <div class="videos clearfix">
       <% @videos.each do |v| %>
         <!-- <h4><%= v.title %></h4> -->
@@ -9,7 +9,7 @@
         <% if user_signed_in? %>
           <div>
             <%= button_to "Edit", edit_video_path(v.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
-            <%= button_to "Delete", video_path(v.id), :method => "delete", :confirm => "Are you sure?", :class => "tiny radius button" %>
+            <%= button_to "Delete", video_path(v.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button left" %>
           </div>
         <% end %>
         <!-- <hr> -->

@@ -1,7 +1,7 @@
 <div class="container blog">
   <div class="row">
     <div class="box small-12 medium-8 large-8">
-    <h1>RECENT NEWS</h1>
+    <h2>RECENT NEWS</h2>
     <% @blogs.each do |b| %>
       <h4><%= b.title %></h4>
       <p><%= b.article %></p>
@@ -9,7 +9,7 @@
       <% if user_signed_in? %>
         <div>
           <%= button_to "Edit", edit_blog_path(b.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
-          <%= button_to "Delete", blog_path(b.id), :method => "delete", :confirm => "Are you sure?", :class => "tiny radius button" %>
+          <%= button_to "Delete", blog_path(b.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button" %>
         </div>
       <% end %>
       <hr>
