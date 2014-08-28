@@ -49,11 +49,17 @@
 }
 
 .logo {
-  width: 100%;
+/*  width: 100%;
   text-align: center;
   position: relative;
   top: 50%;
-  padding: 0 1em;
+  padding: 0 1em;*/
+  background: url("logo2.png") center no-repeat;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
 }
 
 .main-nav {
