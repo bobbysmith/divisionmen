@@ -199,8 +199,12 @@ iframe {
   padding: 0.7em;
 }
 
-@media screen and (max-width: 728px) {
-
+@media screen and (max-width: 769px) {
+  .youtube {
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 568px) {
