@@ -1272,26 +1272,26 @@ $text-color  : #CBCBCB;
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: $black;
-// $table-even-row-bg: $black  ;
+$table-bg: transparent;
+$table-even-row-bg: transparent  ;
 
 // These control the table cell border style
 $table-border-style: solid;
 $table-border-size: 1px;
-$table-border-color: #000;
+$table-border-color: transparent;
 
 // These control the table head styles
-$table-head-bg: #000;
-$table-head-font-size: rem-calc(14);
-// $table-head-font-color: $jet;
-// $table-head-font-weight: $font-weight-bold;
+$table-head-bg: transparent;
+$table-head-font-size: rem-calc(20);
+$table-head-font-color: #CBCBCB;
+$table-head-font-weight: lighter;
 $table-head-padding: rem-calc(8 10 10);
 
 // These control the row padding and font styles
 // $table-row-padding: rem-calc(9 10);
-// $table-row-font-size: rem-calc(14);
-// $table-row-font-color: #cbcbcb;
-// $table-line-height: rem-calc(18);
+$table-row-font-size: rem-calc(14);
+$table-row-font-color: #cbcbcb;
+$table-line-height: rem-calc(18);
 
 // These are for controlling the display and margin of tables
 // $table-display: table-cell;
