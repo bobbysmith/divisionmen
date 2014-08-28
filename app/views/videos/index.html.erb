@@ -5,7 +5,7 @@
         <div class="videos clearfix">
       <% @videos.each do |v| %>
         <!-- <h4><%= v.title %></h4> -->
-        <iframe width="300" height="225" src="//www.youtube.com/embed/<%= v.url %>" frameborder="0" allowfullscreen></iframe>
+        <iframe width="90%" height="315" src="//www.youtube.com/embed/<%= v.url %>" frameborder="0" allowfullscreen></iframe>
         <% if user_signed_in? %>
           <div>
             <%= button_to "Edit", edit_video_path(v.id), :method => "get", action: "edit", :class => "tiny radius button left" %>

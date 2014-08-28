@@ -212,9 +212,12 @@ iframe {
   height: auto;*/
 }
 
-@media screen and (max-width: 728px) {
-  .logo {
-
+@media screen and (max-width: 800px) {
+  iframe {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
