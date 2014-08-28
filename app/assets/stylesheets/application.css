@@ -178,20 +178,11 @@
   margin-left: 0;
 }
 
-.icons a:hover {
-
-}
-
-/*.add {
-  height: auto;
- }*/
-
 label {
   color: #CBCBCB;
  }
 
 .button {
-  /*background: #222222;*/
   margin: 5px;
 }
 
@@ -201,15 +192,11 @@ h6 {
 
 .videos {
   width: 100%;
-  /*margin: 0 auto;*/
   text-align: center;
 }
 
 iframe {
   padding: 0.7em;
-/*  float: left;
-  width: 100%;
-  height: auto;*/
 }
 
 @media screen and (max-width: 728px) {
