@@ -203,7 +203,7 @@ iframe {
 
 }
 
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 568px) {
   .youtube {
     width: 400px;
     height: 300px;
@@ -261,5 +261,10 @@ iframe {
   .nav span {
     font-size: 0.7em;
     margin-left: 5px;
+  }
+
+  .user-nav span {
+    font-size: 0.6em;
+    margin-left: 3px;
   }
 }
