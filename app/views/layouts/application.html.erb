@@ -25,15 +25,15 @@
               <span><%= link_to "WATCH", videos_path %></span>
               <span><%= link_to "CONTACT", contact_path %></span>
             </div>
-            <div class="user-nav nav">
-              <% if user_signed_in? %>
-                <span><%= link_to "ADD POST", new_blog_path %></span>
-                <span><%= link_to "ADD SHOW", new_tour_path %></span>
-                <span><%= link_to "ADD SONG", new_song_path %></span>
-                <span><%= link_to "ADD VIDEO", new_video_path %></span>
-                <span><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
-              <% end %>
-            </div>
+            <% if user_signed_in? %>
+              <div class="user-nav nav" style="background: black;">
+                  <span><%= link_to "ADD POST", new_blog_path %></span>
+                  <span><%= link_to "ADD SHOW", new_tour_path %></span>
+                  <span><%= link_to "ADD SONG", new_song_path %></span>
+                  <span><%= link_to "ADD VIDEO", new_video_path %></span>
+                  <span><%= link_to "SIGN OUT", destroy_user_session_path, :method => "delete" %></span>
+              </div>
+            <% end %>
             <!-- <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li> -->
           </section>
         </nav>

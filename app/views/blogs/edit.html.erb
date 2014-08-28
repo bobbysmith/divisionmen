@@ -1,12 +1,12 @@
-<div class="container">
+<div class="container edit-screen">
   <div class="row">
-    <div class="box large-4">
+    <div class="box small-8 medium-8 large-8">
       <h1>Edit Article</h1>
       <%= form_for @blog, method: "put" do |blog| %>
         <%= blog.label :title %>
         <%= blog.text_field :title, value: @blog.title %>
         <%= blog.label :article %>
-        <%= blog.text_field :article, value: @blog.article %>
+        <%= blog.text_area :article, value: @blog.article %>
         <%= blog.submit "Save", :class => "tiny radius button" %>
       <% end %>
       </div>
