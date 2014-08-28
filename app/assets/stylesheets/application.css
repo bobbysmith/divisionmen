@@ -255,7 +255,7 @@ iframe {
     width: 100%;
   }
   table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
 
   .nav span {
