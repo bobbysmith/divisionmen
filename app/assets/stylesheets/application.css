@@ -222,5 +222,12 @@ iframe {
 }
 
 @media only screen and (max-width: 320px) {
-    /* styles for narrow screens */
+  iframe .youtube {
+    width: 200px;
+    height: 150px;
+  }
+  iframe .bc {
+    width: 200px;
+    height: 175px;
+  }
 }
