@@ -235,6 +235,14 @@ iframe {
     height: 30px;
     display: inline;
   }
+  table {
+    width: 90%;
+  }
+
+  .nav span {
+    font-size: 0.8em;
+    margin-left: 5px;
+  }
 }
 
 @media only screen and (max-width: 385px) {
@@ -255,5 +263,16 @@ iframe {
     width: 30px;
     height: 30px;
     display: inline;
+  }
+  table {
+    width: 100%;
+  }
+  table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+    font-size: 0.7em;
+  }
+
+  .nav span {
+    font-size: 0.7em;
+    margin-left: 5px;
   }
 }
