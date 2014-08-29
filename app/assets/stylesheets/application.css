@@ -224,6 +224,20 @@ iframe {
     height: 300px;
     padding: 5px;
   }
+  .logo {
+    background: url("logo6.png") center no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    min-height: 100%;
+  }
+
+
+  .nav span {
+    font-size: 1em;
+    margin-left: 1em;
+  }
 }
 
 @media screen and (max-width: 568px) {
