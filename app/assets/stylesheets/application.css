@@ -201,6 +201,10 @@ h6 {
   text-align: center;
 }
 
+.bc {
+  display: inline-block;
+}
+
 iframe {
   padding: 0.7em;
 }
@@ -247,8 +251,8 @@ iframe {
     padding: 5px;
   }
   .bc {
-    width: 400px;
-    height: 700px;
+    width: 275px;
+    height: 440px;
     padding: 5px;
   }
   .contact a {
