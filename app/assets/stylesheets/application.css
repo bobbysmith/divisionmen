@@ -309,6 +309,7 @@ iframe {
   }
   table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
     font-size: 0.5em;
+    padding: 2px;
   }
 
   .nav span {
