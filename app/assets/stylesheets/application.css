@@ -184,6 +184,10 @@
   margin-left: 0;
 }
 
+textarea {
+  height: 200px;
+}
+
 label {
   color: #CBCBCB;
  }
