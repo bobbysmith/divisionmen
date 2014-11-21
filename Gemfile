@@ -44,5 +44,4 @@ gem 'devise'
 gem 'will_paginate'
 gem 'rails_12factor'
 
-gem 'sir-trevor-rails'
-gem 'underscore-rails'
+g

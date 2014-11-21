@@ -15,11 +15,5 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
-//= require sir-trevor
-//= require underscore
 
 $(function(){ $(document).foundation(); });
-
-$(function(){
-  var editor = new SirTrevor.Editor({ el: $('.sir-trevor-area') });
-});
