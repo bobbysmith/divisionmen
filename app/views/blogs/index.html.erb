@@ -4,7 +4,7 @@
     <h2>RECENT NEWS</h2>
     <% @blogs.each do |b| %>
       <h4><%= b.title %></h4>
-      <p><%= b.article %></p>
+      <p><%= raw(b.article) %></p>
       <p>Posted: <%= b.created_at.strftime("%b %d, %Y") %></p>
       <% if user_signed_in? %>
         <div>

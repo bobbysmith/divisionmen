@@ -6,7 +6,7 @@
         <%= blog.label :title %>
         <%= blog.text_field :title, value: @blog.title %>
         <%= blog.label :article %>
-        <%= blog.text_area :article, value: @blog.article %>
+        <%= blog.cktext_area :article, value: @blog.article %>
         <%= blog.submit "Save", :class => "tiny radius button" %>
       <% end %>
       </div>
