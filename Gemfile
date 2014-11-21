@@ -44,4 +44,4 @@ gem 'devise'
 gem 'will_paginate'
 gem 'rails_12factor'
 
-# gem 'mercury-rails'
+gem 'sir-trevor-rails'
