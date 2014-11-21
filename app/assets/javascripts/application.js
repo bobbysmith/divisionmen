@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 //= require sir-trevor
+//= require underscore
 
 $(function(){ $(document).foundation(); });
 
