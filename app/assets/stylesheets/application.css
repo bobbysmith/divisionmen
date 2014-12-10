@@ -128,7 +128,7 @@
 }
 
 .live-page {
-  background: url("dvm.jpg") fixed;
+  background: url("live.jpg") fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -147,13 +147,22 @@
 }
 
 .video-page {
-  background: url("live.jpg") fixed;
+  background: url("video.jpg") fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 100%;
 
+}
+
+.photo-page {
+  background: url("dvm2.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
 }
 
 .contact {
@@ -226,7 +235,7 @@ iframe {
   padding-top: 5px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 920px) {
   .youtube {
     width: 400px;
     height: 300px;
@@ -288,7 +297,7 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 385px) {
+@media only screen and (max-width: 400px) {
   .youtube {
     width: 200px;
     height: 150px;
