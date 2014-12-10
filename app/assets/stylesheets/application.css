@@ -128,7 +128,7 @@
 }
 
 .live-page {
-  background: url("live.jpg") fixed;
+  background: url("dvm.jpg") fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -147,7 +147,7 @@
 }
 
 .video-page {
-  background: url("video.jpg") fixed;
+  background: url("live.jpg") fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
