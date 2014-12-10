@@ -235,6 +235,11 @@ iframe {
   padding-top: 5px;
 }
 
+.image img {
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (max-width: 920px) {
   .youtube {
     width: 400px;

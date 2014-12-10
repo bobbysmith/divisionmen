@@ -4,7 +4,7 @@
     <h2>PHOTOS</h2>
       <div class="photos clearfix">
         <% @photos.each do |p| %>
-        <div><%= p.url %></div>
+        <span class="image"><a href=""><img src="<%= p.url %>" alt=""></a></span>
         <% if user_signed_in? %>
           <div>
             <%= button_to "Edit", edit_video_path(v.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
