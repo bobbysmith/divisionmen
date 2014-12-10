@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   resources :blogs
   resources :videos
   resources :songs
+  resources :photos
   get "/contact", to: "contacts#index"
 end

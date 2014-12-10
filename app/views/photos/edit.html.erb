@@ -1,0 +1,12 @@
+<div class="container edit-screen">
+  <div class="row">
+    <div class="box small-8 medium-6 large-4">
+      <h1>Edit Photo</h1>
+      <%= form_for @photo, method: "put" do |photo| %>
+        <%= photo.label :url %>
+        <%= photo.text_field :url, value: @photo.url %>
+        <%= photo.submit "Save", :class => "tiny radius button" %>
+      <% end %>
+    </div>
+  </div>
+</div>
