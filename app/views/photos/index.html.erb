@@ -8,8 +8,8 @@
         <span class="image"><a href=""><img src="<%= p.url %>" alt=""></a></span>
         <% if user_signed_in? %>
           <div>
-            <%= button_to "Edit", edit_video_path(v.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
-            <%= button_to "Delete", video_path(v.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button left" %>
+            <%= button_to "Edit", edit_photo_path(p.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
+            <%= button_to "Delete", photo_path(p.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button left" %>
           </div>
         <% end %>
         <!-- <hr> -->
