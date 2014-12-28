@@ -5,14 +5,17 @@
     <h4 style="text-align: center;">Under Construction</h4>
       <div class="photos clearfix">
         <% @photos.each do |p| %>
-        <span class="image"><a href=""><img src="<%= p.url %>" alt=""></a></span>
-        <% if user_signed_in? %>
-          <div>
-            <%= button_to "Edit", edit_photo_path(p.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
-            <%= button_to "Delete", photo_path(p.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button left" %>
+          <a href="#" data-reveal-id="myModal" class="image"><img src="<%= p.url %>" alt=""></a>
+          <div id="myModal" class="reveal-modal" data-reveal>
+            <img src="<%= p.url %>" alt="">
+            <a class="close-reveal-modal"></a>
           </div>
-        <% end %>
-        <!-- <hr> -->
+          <% if user_signed_in? %>
+            <div>
+              <%= button_to "Edit", edit_photo_path(p.id), :method => "get", action: "edit", :class => "tiny radius button left" %>
+              <%= button_to "Delete", photo_path(p.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button left" %>
+            </div>
+          <% end %>
         <% end %>
       </div>
     </div>
