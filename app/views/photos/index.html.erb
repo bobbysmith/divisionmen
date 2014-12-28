@@ -4,14 +4,14 @@
     <h2>PHOTOS</h2>
       <div class="photos clearfix" style="margin: 0 auto;">
         <% @photos.each do |p| %>
-        
+
         <!-- icon -->
           <a href="#" data-reveal-id="myModal" class="image"><img src="<%= p.url %>" alt=""></a>
-
+        
           <!-- modal screen -->
           <div id="myModal" class="reveal-modal" data-reveal>
             <img src="<%= p.url %>" alt="" style="display: block; margin: 0 auto;">
-            <a class="close-reveal-modal"><h5>x</h5></a>
+            <a class="close-reveal-modal"><h4>x</h4></a>
           </div>
 
           <!-- edit delete buttons -->
@@ -27,4 +27,3 @@
     </div>
   </div>
 </div>
-
