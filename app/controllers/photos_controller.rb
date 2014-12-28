@@ -2,7 +2,7 @@ class PhotosController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
-    @photos = Photo.all
+    @photos = Photo.order('created_at DESC')
   end
 
   def show
