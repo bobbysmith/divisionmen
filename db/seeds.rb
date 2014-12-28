@@ -17,4 +17,4 @@
 
 # blogs = Blog.create([{title: "TV", article: "We have a new video up on youtube. We have also got a new album available for purchase. It's called 'Under the Gun' We have got some shows listed as well. Thnx. DVM"}])
 
-photo = Photo.create([{url: "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10801743_10152551929483963_5559661729038456052_n.jpg?oh=7a64e34563c6efdfb355335a23a512eb&oe=550F883D&__gda__=1426449545_d2b82459c3b54bf9f6602506c5258135"}])
+photo = Photo.create([{url: "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10801743_10152551929483963_5559661729038456052_n.jpg?oh=7a64e34563c6efdfb355335a23a512eb&oe=550F883D&__gda__=1426449545_d2b82459c3b54bf9f6602506c5258135"}, {url: "http://data3.whicdn.com/images/24566959/large.jpg"}])

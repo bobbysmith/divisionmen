@@ -2,21 +2,28 @@
   <div class="row">
     <div class="box small-12 medium-9 large-9 clearfix">
     <h2>PHOTOS</h2>
-      <% @photos.each do |p| %>
-        <div class="photos clearfix">
-            <a href="#" data-reveal-id="myModal" class="image"><img src="<%= p.url %>" alt=""></a>
-            <div id="myModal" class="reveal-modal" data-reveal>
-              <img src="<%= p.url %>" alt="" style="display: block; margin: 0 auto;">
-              <a class="close-reveal-modal">x</a>
+      <div class="photos clearfix" style="margin: 0 auto;">
+        <% @photos.each do |p| %>
+        
+        <!-- icon -->
+          <a href="#" data-reveal-id="myModal" class="image"><img src="<%= p.url %>" alt=""></a>
+
+          <!-- modal screen -->
+          <div id="myModal" class="reveal-modal" data-reveal>
+            <img src="<%= p.url %>" alt="" style="display: block; margin: 0 auto;">
+            <a class="close-reveal-modal"><h5>x</h5></a>
+          </div>
+
+          <!-- edit delete buttons -->
+          <% if user_signed_in? %>
+            <div>
+              <%= button_to "Edit", edit_photo_path(p.id), :method => "get", action: "edit", :class => "tiny radius button" %>
+              <%= button_to "Delete", photo_path(p.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button" %>
             </div>
-            <% if user_signed_in? %>
-              <div>
-                <%= button_to "Edit", edit_photo_path(p.id), :method => "get", action: "edit", :class => "tiny radius button" %>
-                <%= button_to "Delete", photo_path(p.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button" %>
-              </div>
-            <% end %>
-        </div>
-      <% end %>
+          <% end %>
+
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
