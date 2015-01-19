@@ -393,23 +393,22 @@ iframe {
     right: 0em;
     top: 3em;
     background: rgba(38, 41, 44, 0.95);
-    border: 1px solid #fafafa;
-    border-radius: 0.5em;
+    border: 1px solid #555555;
+    width: 7em;
+    padding: 1em;
   }
 
   #small-nav ul {
     margin: 0;
-    padding: 1em;
-    width: 7em;
   }
 
-  #small-nav ul li {
+  #small-nav span {
     display: block;
     margin-left: 0;
     font-size: 0.6em;
   }
 
-  #small-nav ul li a {
+  #small-nav span a {
     text-decoration: none;
     display: block;
     color: inherit;
@@ -419,9 +418,9 @@ iframe {
     outline: none;
   }
 
-  #small-nav ul li a:hover {
+  #small-nav span a:hover {
     background: rgba(0,0,0,0.5);
-    color: #fefefe;
+    /*color: #fefefe;*/
   }
 
 

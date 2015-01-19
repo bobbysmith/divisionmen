@@ -48,6 +48,7 @@
               <span><%= link_to "PHOTOS", photos_path %></span>
               <span><%= link_to "CONTACT", contact_path %></span>
                 <% if user_signed_in? %>
+                  <hr>
                   <span><%= link_to "Add Blog", new_blog_path %></span>
                   <span><%= link_to "Add Show", new_tour_path %></span>
                   <span><%= link_to "Add Song", new_song_path %></span>
