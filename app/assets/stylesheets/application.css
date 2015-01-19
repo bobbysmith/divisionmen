@@ -365,6 +365,10 @@ iframe {
     display: none;
   }
 
+  .user-nav.nav {
+    display: none;
+  }
+
   .small-icon {
     display: block;
     position: absolute;
