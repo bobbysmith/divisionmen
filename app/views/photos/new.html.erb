@@ -3,7 +3,7 @@
     <div class="box small-12 medium-6 large-4">
       <h1>Add Photo</h1>
       <%= form_for @photo, method: "post" do |photo| %>
-        <%= photo.label :url %>
+        <%= photo.label :url, "URL" %>
         <%= photo.text_field :url %>
         <%= photo.submit "Add", :class => "tiny radius button" %>
       <% end %>

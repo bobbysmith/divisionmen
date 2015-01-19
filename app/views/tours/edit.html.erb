@@ -5,7 +5,7 @@
       <%= form_for @tour, method: "put" do |tour| %>
         <%= tour.label :venue %>
         <%= tour.text_field :venue, value: @tour.venue %>
-        <%= tour.label :url %>
+        <%= tour.label :url, "Website" %>
         <%= tour.text_field :url, value: @tour.url %>
         <%= tour.label :city %>
         <%= tour.text_field :city, value: @tour.city %>

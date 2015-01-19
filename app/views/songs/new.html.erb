@@ -5,7 +5,7 @@
         <%= form_for @song, method: "post" do |song| %>
           <%= song.label :title %>
           <%= song.text_field :title %>
-          <%= song.label :url %>
+          <%= song.label :url, "URL" %>
           <%= song.text_field :url %>
           <%= song.submit "Create", :class => "tiny radius button" %>
         <% end %>
