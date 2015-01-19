@@ -17,7 +17,7 @@
       <!-- <div class="contain-to-grid sticky"> -->
         <nav>
           <section>
-          <div class="nav main-nav">
+          <div class="nav main-nav" id="nav">
               <span><%= link_to "HOME", root_path %></span>
               <span><%= link_to "NEWS", blogs_path %></span>
               <span><%= link_to "LIVE", tours_path %></span>
@@ -37,6 +37,21 @@
               </div>
             <% end %>
             <!-- <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li> -->
+            <div class="small-icon">
+            <span>&#9776;</span>
+            <nav id="small-nav">
+              <span><%= link_to "HOME", root_path %></span>
+              <span><%= link_to "NEWS", blogs_path %></span>
+              <span><%= link_to "LIVE", tours_path %></span>
+              <span><%= link_to "LISTEN", songs_path %></span>
+              <span><%= link_to "WATCH", videos_path %></span>
+              <span><%= link_to "PHOTOS", photos_path %></span>
+              <span><%= link_to "CONTACT", contact_path %></span>
+                <% if user_signed_in? %>
+                  <span><%= link_to "Sign Out", destroy_user_session_path, :method => "delete" %></span>
+                <% end %>
+            </nav>
+            </div>
           </section>
         </nav>
       <!-- </div> -->

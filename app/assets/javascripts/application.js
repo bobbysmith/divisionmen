@@ -17,5 +17,26 @@
 //= require ckeditor/init
 //= require_tree .
 
+
+var ready;
+ready = function() {
+
+    $(".small-icon span").on("mouseenter", function (){
+      $("#small-nav").show();
+    });
+
+    $(".small-icon").on("mouseleave", function(){
+      $("#small-nav").hide();
+    });
+
+
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
+
+
+
 $(function(){ $(document).foundation(); });
 
