@@ -4,7 +4,9 @@
       <h1>Edit Photo</h1>
       <%= form_for @photo, method: "put" do |photo| %>
         <%= photo.label :url, "URL" %>
-        <%= photo.text_field :url, value: @photo.url %>
+        <%= photo.cktext_area :review, value: @photo.review %>
+
+        <!-- <%= photo.text_field :url, value: @photo.url %> -->
         <%= photo.submit "Save", :class => "tiny radius button" %>
       <% end %>
     </div>

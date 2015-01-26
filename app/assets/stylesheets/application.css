@@ -359,8 +359,8 @@ iframe {
     min-height: 100%;
   }
 
-  .blog img {
-    width: 100%;
+  .blog p img {
+    /*width: 100%;*/
     height: auto;
   }
 
@@ -382,11 +382,11 @@ iframe {
     display: block;
     position: absolute;
     right: 0;
-    padding-right: 1em;
   }
 
   .small-icon span {
     /*text-decoration: none;*/
+    padding-right: 1em;
     cursor: pointer;
     color: #ffffff;
   }
