@@ -1,8 +1,8 @@
 class AboutController < ApplicationController
 
   def index
-    @photos = Photo.all
-    @reviews = Review.all 
+    @photos = Photo.order('created_at ASC')
+    @reviews = Review.order('created_at DESC')
   end
 
 end
