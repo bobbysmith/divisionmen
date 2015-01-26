@@ -1,0 +1,12 @@
+<div class="container edit-screen">
+  <div class="row">
+    <div class="box small-8 medium-8 large-8">
+      <h1>Edit Review</h1>
+      <%= form_for @review, method: "put" do |review| %>
+        <%= review.label :article %>
+        <%= review.cktext_area :article, value: @review.quote %>
+        <%= review.submit "Save", :class => "tiny radius button" %>
+      <% end %>
+      </div>
+  </div>
+</div>
