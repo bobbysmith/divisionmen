@@ -16,7 +16,7 @@ class PhotosController < ApplicationController
   def create
     photo = Photo.new(photo_params)
     photo.save
-    redirect_to photos_path
+    redirect_to about_path
   end
 
   def edit
@@ -33,13 +33,13 @@ class PhotosController < ApplicationController
     end
 
     @photo.update(photo_params)
-    redirect_to photos_path
+    redirect_to about_path
   end
 
   def destroy
     @photo = Photo.find(params[:id])
     @photo.delete
-    redirect_to photos_path
+    redirect_to about_path
   end
 
   private

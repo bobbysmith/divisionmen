@@ -16,7 +16,7 @@ class ReviewsController < ApplicationController
   def create
     review = Review.new(review_params)
     review.save
-    redirect_to reviews_path
+    redirect_to about_path
   end
 
   def edit
@@ -33,13 +33,13 @@ class ReviewsController < ApplicationController
     end
 
     @review.update(review_params)
-    redirect_to reviews_path
+    redirect_to about_path
   end
 
   def destroy
     @review = Review.find(params[:id])
     @review.delete
-    redirect_to reviews_path
+    redirect_to about_path
   end
 
   private

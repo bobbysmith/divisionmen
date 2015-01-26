@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :photos
   resources :reviews
   get "/contact", to: "contacts#index"
+  get "/about", to: "about#index"
 end
