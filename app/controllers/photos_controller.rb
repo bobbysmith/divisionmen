@@ -3,6 +3,7 @@ class PhotosController < ApplicationController
 
   def index
     @photos = Photo.order('created_at DESC')
+    @reviews = Review.all
   end
 
   def show
