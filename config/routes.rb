@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   resources :blogs
   resources :videos
   resources :songs
-  resources :photos
-  resources :reviews
+  resources :photos, :except => [:index]
+  resources :reviews, :except => [:index]
   get "/contact", to: "contacts#index"
   get "/about", to: "about#index"
 end
