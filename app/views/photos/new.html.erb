@@ -1,13 +1,6 @@
 <div class="container edit-screen">
   <div class="row">
     <div class="box small-12 medium-6 large-4">
-      <h1>Add Review</h1>
-      <%= form_for @review, method: "post" do |f| %>
-        <%= f.label :quote %>
-        <%= f.cktext_area :quote %>
-        <%= f.submit "Add", :class => "tiny radius button" %>
-      <% end %>
-      <br><br>
       <h1>Add Photo</h1>
       <%= form_for @photo, method: "post" do |photo| %>
         <%= photo.label :url, "URL" %>
