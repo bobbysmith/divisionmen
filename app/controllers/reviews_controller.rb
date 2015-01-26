@@ -26,7 +26,7 @@ class ReviewsController < ApplicationController
   def update
     @review = Review.find(params[:id])
 
-    %w{url}.each do |param|
+    %w{quote}.each do |param|
       if params[:review][param].blank?
         params[:review][param].delete
       end
