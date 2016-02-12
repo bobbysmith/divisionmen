@@ -17,7 +17,9 @@
       <tbody>
         <% @tours.each do |t| %>
           <tr>
-          <td><%= t.date.strftime("%b %d, %Y") %></td>
+          <% if t.date != nil %>
+          <td><%= t.date.strftime("%B %d %Y") %></td>
+          <% end %>
           <td><%= t.city %></td>
           <td><a href="<%= t.url %>" target="_blank"><%= t.venue %></a></td>
           <td><%= t.bands %></td>
