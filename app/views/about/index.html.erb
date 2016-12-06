@@ -46,7 +46,7 @@
           <!-- edit delete buttons -->
           <% if user_signed_in? %>
             <div>
-              <%= button_to "Edit this shit", edit_photo_path(p.id), :method => "get", action: "edit", :class => "tiny radius button" %>
+              <%= button_to "Edit", edit_photo_path(p.id), :method => "get", action: "edit", :class => "tiny radius button" %>
               <%= button_to "Delete", photo_path(p.id), :method => "delete", data: {confirm: "Are you sure?"}, :class => "tiny radius button" %>
             </div>
           <% end %>
