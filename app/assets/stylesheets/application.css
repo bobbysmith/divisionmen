@@ -18,12 +18,7 @@
  */
 
  body {
-  background: #26292C;
-  /*background: url("background.png")fixed no-repeat;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #212528;
   width: 100%;
   height: 100%;
  }
@@ -32,8 +27,7 @@
   color: #cbcbcb;
   text-align: center;
   letter-spacing: 2px;
-  font-family: "Lato";
-  /*font-weight: 100;*/
+  font-family: 'Lato', sans-serif;
  }
 
  h4, p {
@@ -41,7 +35,6 @@
  }
 
 .box {
-  /*margin: 3em 0;*/
   margin: 2em auto;
   background-color:rgba(0,0,0,0.5);
   border-radius: 3px;
@@ -49,27 +42,43 @@
 }
 
 .logo {
-/*  width: 100%;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  padding: 0 1em;*/
-  background: url("logo6.png") center no-repeat;
+  background: url("background.png") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 100%;
+  height: calc(100vh - 48px);
+  position: relative;
+  top: 49px;
+}
+
+.logo__title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 9vw;
+  line-height: 1;
+  position: absolute;
+  top: calc(45% - 48px);
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.large::first-letter {
+  font-size: 12vw;
 }
 
 .main-nav {
   background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
   border-bottom: 1px solid #555;
   height: 3em;
-  /*margin: 0 auto;*/
   text-align: center;
 
 }
@@ -256,15 +265,6 @@ iframe {
     height: 300px;
     padding: 5px;
   }
-  .logo {
-    background: url("logo6.png") center no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    min-height: 100%;
-  }
-
 
   .nav span {
     font-size: 1em;
@@ -300,15 +300,6 @@ iframe {
   .nav span {
     font-size: 0.8em;
     margin-left: 5px;
-  }
-
-  .logo {
-    background: url("logo6.png") center no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    min-height: 100%;
   }
 }
 
@@ -350,17 +341,7 @@ iframe {
     margin-left: 2px;
   }
 
-  .logo {
-    background: url("logo6.png") center no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    min-height: 100%;
-  }
-
   .blog p img {
-    /*width: 100%;*/
     height: auto;
   }
 
@@ -385,19 +366,12 @@ iframe {
   }
 
   .small-icon span {
-    /*text-decoration: none;*/
     padding-right: 1em;
     cursor: pointer;
     color: #ffffff;
   }
 
-/*  #small-icon a:hover {
-    color: #fefefe;
-    background: #1e1e1e;
-  }*/
-
   #small-nav {
-    /*display: block;*/
     position: absolute;
     right: 0em;
     top: 3em;
@@ -429,7 +403,6 @@ iframe {
 
   #small-nav span a:hover {
     background: rgba(0,0,0,0.5);
-    /*color: #fefefe;*/
   }
 
 
