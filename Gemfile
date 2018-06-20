@@ -5,7 +5,7 @@ ruby '2.1.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,3 +46,5 @@ gem 'will_paginate'
 gem 'rails_12factor'
 
 gem "ckeditor"
+
+gem 'sprockets', '~> 2.12.5'
